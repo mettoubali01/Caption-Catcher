@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Caption catcher</title>
+	</head>
+	<body>
+
+		<p>This is a bookmarklet to catch <a href="javascript:(function(){
+			let script = document.createElement('script');
+			let url = 'http://localhost:80/main.js';
+			script.src = url + '?' + new Date();
+			document.body.appendChild(script)
+		})()">Youtube Video Caption</a></p> 
+
+	</body>
+</html>
